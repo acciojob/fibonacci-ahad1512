@@ -3,8 +3,8 @@ function fibonacci(num) {
 	let first =0;
 	let second =1;
 	let term =0;
-	for (let i = 1; i < num; i++) {
-		term+=first+second;
+	for (let i = 1; i < num-1; i++) {
+		term = first+second;
 		first=second;
 		second= term;
 	}
